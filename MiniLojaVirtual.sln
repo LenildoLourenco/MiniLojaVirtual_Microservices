@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniLojaVirtual.ProductApi", "MiniLojaVirtual.ProductApi\MiniLojaVirtual.ProductApi.csproj", "{296122EA-8077-4C43-B2A9-750B600E65F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniLojaVirtual.ProductApi", "MiniLojaVirtual.ProductApi\MiniLojaVirtual.ProductApi.csproj", "{296122EA-8077-4C43-B2A9-750B600E65F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniLojaVirtual.Web", "MiniLojaVirtual.Web\MiniLojaVirtual.Web.csproj", "{BAA9C5D6-6CC1-4B3C-A025-42A7704D61F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{296122EA-8077-4C43-B2A9-750B600E65F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{296122EA-8077-4C43-B2A9-750B600E65F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{296122EA-8077-4C43-B2A9-750B600E65F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAA9C5D6-6CC1-4B3C-A025-42A7704D61F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAA9C5D6-6CC1-4B3C-A025-42A7704D61F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAA9C5D6-6CC1-4B3C-A025-42A7704D61F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAA9C5D6-6CC1-4B3C-A025-42A7704D61F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
