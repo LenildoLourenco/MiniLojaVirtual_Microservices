@@ -49,14 +49,9 @@ public class ProductsController : ControllerBase
             new { id = productDto.Id }, productDto);
     }
 
-    [HttpPut("{id}")]
-    public async Task<ActionResult> Put(int id, [FromBody] ProductDto productDto)
+    [HttpPut]
+    public async Task<ActionResult> Put([FromBody] ProductDto productDto)
     {
-        if (id != productDto.Id)
-        {
-            return BadRequest("Invalid data");
-        }
-
         if (productDto == null)
             return BadRequest("Invalid data");
 
