@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MiniLojaVirtual.ProductApi.Dtos;
+using MiniLojaVirtual.ProductApi.Roles;
 using MiniLojaVirtual.ProductApi.Services;
 
 namespace MiniLojaVirtual.ProductApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class ProductsController : ControllerBase
 {
     private readonly IProductService _productService;
@@ -60,6 +63,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = Role.Admin)]
     public async Task<ActionResult<ProductDto>> Delete(int id)
     {
         var productDto = await _productService.GetProductById(id);
